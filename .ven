@@ -1,0 +1,7 @@
+//Proton mail
+EMAIL_SENDER=tuoindirizzo@proton.me
+EMAIL_RECEIVER=destinatario@example.com
+EMAIL_PASSWORD=password_generata_dal_bridge
+REPORT_FILE=report.txt
+SMTP_SERVER=127.0.0.1
+SMTP_PORT=1025
