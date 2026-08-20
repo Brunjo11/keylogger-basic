@@ -1,7 +1,7 @@
 //Proton mail You must change the information with yours
-EMAIL_SENDER=tuoindirizzo@proton.me
-EMAIL_RECEIVER=destinatario@example.com
-EMAIL_PASSWORD=password_generata_dal_bridge
+EMAIL_SENDER=yourmail@proton.me
+EMAIL_RECEIVER=recipientmail@example.com
+EMAIL_PASSWORD=password_genereted_by_bridge
 REPORT_FILE=keylogs.txt
 SMTP_SERVER=127.0.0.1
 SMTP_PORT=1025
