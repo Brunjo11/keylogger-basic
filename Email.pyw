@@ -25,7 +25,7 @@ def send_email():
     msg["To"] = receiver
     msg["Subject"] = "PC report"
 
-    with smtplib.SMTP("smtp.gmail.com", 587) as server:
+    with smtplib.SMTP("smtp.outlook.com", 587) as server:
         server.starttls()
         server.login(sender, password)
         server.send_message(msg)
